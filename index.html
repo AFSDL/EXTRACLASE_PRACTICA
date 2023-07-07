@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gastos Trimestrales</title>
+  <style>
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,th{
+      border:1px solid black;
+    }
+
+    table,td{
+      border:1px solid black;
+    }
+
+    th,td{
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid ;
+    }
+
+    th{
+      background-color: #f2f2f2;
+    }
+
+    tr{
+      background-color:FFFEC4;
+    }
+
+ </style>   
+</head>
+<body>
+
+<h2>Cuadro de Gastos</h2>
+
+<table style="width:100%">
+  <tr> 
+    <th>Trimestre</th>
+    <th>Agua</th>
+    <th>Luz</th>
+    <th>Gas</th>
+  </tr>
+  <tr>
+
+    <td>1er Trimestre </td>  
+
+    <td>Q120.00</td>
+    <td>Q85.00</td>
+    <td>Q180.00</td>
+  </tr>
+  <tr>
+
+    <td>2do Trimestre </td>
+
+    <td>Q420.00</td>
+    <td>Q105.00</td>
+    <td>Q225.00</td>
+  </tr>
+  <tr>
+    <td>3er Trimestre </td>
+
+    <td>Q360.00</td>
+    <td>Q90.00</td>
+    <td>Q160.00</td>
+  </tr>
+
+  <tr>
+    <td>4to Trimestre </td>
+ <td>Q105.00</td>
+    <td>Q75.00</td>
+    <td>Q200.00</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+
+  <script>
+    
+    var datos = {
+      labels: ['Agua', 'Luz', 'Gas'],
+      datasets: [{
+        label: '1er Trimestre',
+        data: [120, 85, 180],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // Configuración de la gráfica
+    var opciones = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Crear la gráfica de barras
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: datos,
+      options: opciones
+    });
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+
+  <script>
+    
+    var datos = {
+      labels: ['Agua', 'Luz', 'Gas'],
+      datasets: [{
+        label: '2do Trimestre',
+        data: [420, 105, 225],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // Configuración de la gráfica
+    var opciones = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Crear la gráfica de barras
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: datos,
+      options: opciones
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+
+  <script>
+    
+    var datos = {
+      labels: ['Agua', 'Luz', 'Gas'],
+      datasets: [{
+        label: '3er Trimestre',
+        data: [360, 90, 160],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // Configuración de la gráfica
+    var opciones = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Crear la gráfica de barras
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: datos,
+      options: opciones
+    });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+
+  <script>
+    
+    var datos = {
+      labels: ['Agua', 'Luz', 'Gas'],
+      datasets: [{
+        label: '4to Trimestre',
+        data: [105, 75, 200],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // Configuración de la gráfica
+    var opciones = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Crear la gráfica de barras
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: datos,
+      options: opciones
+    });
+  </script>
+</body>
+</html>
